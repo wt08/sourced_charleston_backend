@@ -1,0 +1,154 @@
+  [1m[35m (454.2ms)[0m  [1m[35mCREATE DATABASE "charleston_app_api_development" ENCODING = 'unicode'[0m
+  [1m[35m (118.9ms)[0m  [1m[35mCREATE DATABASE "charleston_app_api_test" ENCODING = 'unicode'[0m
+  [1m[35m (15.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarkets (20200813124942)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "markets" ("id" bigserial primary key, "name" character varying, "address" character varying, "exits" integer, "coordinates" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200813124942"]]
+  [1m[35m (13.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-08-13 12:50:30.114130"], ["updated_at", "2020-08-13 12:50:30.114130"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-08-13 08:54:24 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 41.7ms | Allocations: 478)
+Completed 200 OK in 83ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 2616)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 08:54:28 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (7.3ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 5.4ms | ActiveRecord: 18.6ms | Allocations: 1853)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/markets" for ::1 at 2020-08-13 08:56:39 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.6ms | Allocations: 848)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-13 08:56:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/markets" for ::1 at 2020-08-13 08:56:40 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.0ms | Allocations: 857)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 08:56:42 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 829)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (11.0ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "coordinates", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sea Island Farmers Market"], ["address", "2024 Academy Road, Johns Island, SC 29455"], ["exits", 4214], ["coordinates", "0.0"], ["created_at", "2020-08-13 12:56:58.015736"], ["updated_at", "2020-08-13 12:56:58.015736"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "coordinates", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "James Island Farmers Market"], ["address", " 1977 Maybank Highway, Charleston, SC 29412"], ["exits", 4214], ["coordinates", "0.0"], ["created_at", "2020-08-13 12:56:58.032607"], ["updated_at", "2020-08-13 12:56:58.032607"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/markets" for ::1 at 2020-08-13 08:57:01 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 11.2ms | ActiveRecord: 20.1ms | Allocations: 5650)
+
+
+  [1m[36mMarket Load (0.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets" WHERE "markets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (3.9ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMarket Load (0.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets" WHERE "markets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/markets" for ::1 at 2020-08-13 08:58:08 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.5ms | Allocations: 829)
+
+
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/markets" for ::1 at 2020-08-13 09:02:57 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.1ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.1ms | Allocations: 829)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarkets (20200813124942)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE "markets"[0m
+  [1m[36mprimary::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200813124942"]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMarkets (20200813131031)
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.1ms)[0m  [1m[35mCREATE TABLE "markets" ("id" bigserial primary key, "name" character varying, "address" character varying, "exits" integer, "lat" decimal, "long" decimal, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200813131031"]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (1.5ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sea Island Farmers Market"], ["address", "2024 Academy Road, Johns Island, SC 29455"], ["exits", 4214], ["lat", "32.715936"], ["long", "-80.050307"], ["created_at", "2020-08-13 13:12:57.511037"], ["updated_at", "2020-08-13 13:12:57.511037"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.5ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Island Farmers Market"], ["address", " 1977 Maybank Highway, Charleston, SC 29412"], ["exits", 4214], ["lat", "32.762181"], ["long", "-79.987"], ["created_at", "2020-08-13 13:12:57.517972"], ["updated_at", "2020-08-13 13:12:57.517972"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/markets" for ::1 at 2020-08-13 09:13:03 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 1.4ms | Allocations: 6025)
+
+
