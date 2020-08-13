@@ -1174,3 +1174,277 @@ Processing by MarketsController#index as HTML
 Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 2440)
 
 
+Started GET "/markets" for ::1 at 2020-08-13 17:23:07 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (16.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 42ms (Views: 22.0ms | ActiveRecord: 16.6ms | Allocations: 7841)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:23:42 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (34.7ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 91ms (Views: 28.9ms | ActiveRecord: 57.5ms | Allocations: 8579)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:25:11 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.3ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 2.3ms | Allocations: 2450)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:28:06 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 2.0ms | Allocations: 2450)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:28:09 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (17.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 9.1ms | ActiveRecord: 17.4ms | Allocations: 2450)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:28:25 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (23.3ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 30ms (Views: 6.5ms | ActiveRecord: 23.3ms | Allocations: 2450)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:28:42 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (8.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 6.0ms | ActiveRecord: 8.8ms | Allocations: 2432)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:28:45 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 6.1ms | ActiveRecord: 3.6ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:29:07 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (17.1ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 5.7ms | ActiveRecord: 17.1ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:29:31 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.2ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 2.2ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:29:41 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (23.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 30ms (Views: 6.0ms | ActiveRecord: 23.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:30:07 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:30:13 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:30:56 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (17.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 3.7ms | ActiveRecord: 17.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:31:58 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 2.4ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:33:27 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (13.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 5.5ms | ActiveRecord: 13.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:33:35 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (14.3ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 7.1ms | ActiveRecord: 14.3ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:33:45 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:34:42 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 3.0ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:34:49 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 3.0ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:34:59 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.8ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:35:02 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (12.1ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 6.0ms | ActiveRecord: 12.1ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:37:01 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (18.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 25ms (Views: 6.1ms | ActiveRecord: 18.6ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:37:06 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (35.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 42ms (Views: 6.2ms | ActiveRecord: 35.5ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:38:34 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.6ms | Allocations: 2434)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:38:45 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (21.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 29ms (Views: 6.9ms | ActiveRecord: 21.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:38:47 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:38:49 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.8ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:39:05 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (9.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 6.1ms | ActiveRecord: 9.8ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:42:48 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (8.6ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 8.6ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:43:16 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (9.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 6.6ms | ActiveRecord: 9.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:43:23 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (0.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:43:27 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.9ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:43:49 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (77.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 85ms (Views: 7.5ms | ActiveRecord: 77.4ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:44:03 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (39.7ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 47ms (Views: 7.0ms | ActiveRecord: 39.7ms | Allocations: 2431)
+
+
+Started GET "/markets" for ::1 at 2020-08-13 17:44:25 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (9.2ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 5.9ms | ActiveRecord: 9.2ms | Allocations: 2431)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200813214550)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200813214550"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "willtomtid@gmail.com"], ["username", "wt08"], ["created_at", "2020-08-13 21:49:08.848344"], ["updated_at", "2020-08-13 21:49:08.848344"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2020-08-13 17:49:21 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 10.6ms | ActiveRecord: 19.0ms | Allocations: 4644)
+
+
