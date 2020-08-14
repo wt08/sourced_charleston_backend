@@ -1545,3 +1545,378 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.2ms | Allocations: 1449)
 
 
+Started GET "/" for ::1 at 2020-08-14 07:09:44 -0400
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 22.3ms | Allocations: 315)
+Completed 200 OK in 63ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 1595)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-14 07:09:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-08-14 07:09:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-08-14 07:09:49 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 106ms (Views: 13.2ms | ActiveRecord: 87.9ms | Allocations: 5530)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 07:17:01 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (19.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 165ms (Views: 101.3ms | ActiveRecord: 60.1ms | Allocations: 8170)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 07:17:14 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (35.8ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 42ms (Views: 5.9ms | ActiveRecord: 35.8ms | Allocations: 2447)
+
+
+Started POST "/users" for ::1 at 2020-08-14 07:19:20 -0400
+Started GET "/markets" for ::1 at 2020-08-14 07:19:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"chad@gmail.com", "username"=>"chad8", "user"=>{"email"=>"chad@gmail.com", "username"=>"chad8"}}
+  [1m[35m (11.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (59.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "chad@gmail.com"], ["username", "chad8"], ["created_at", "2020-08-14 11:19:20.971878"], ["updated_at", "2020-08-14 11:19:20.971878"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 127ms (Views: 4.2ms | ActiveRecord: 111.0ms | Allocations: 2846)
+
+
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (21.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 5.1ms | ActiveRecord: 21.4ms | Allocations: 2541)
+
+
+Started GET "/users" for ::1 at 2020-08-14 07:19:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.3ms | Allocations: 1542)
+
+
+Started POST "/users" for ::1 at 2020-08-14 07:23:20 -0400
+Started GET "/markets" for ::1 at 2020-08-14 07:23:20 -0400
+Processing by MarketsController#index as HTML
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"bob@yahoo.com", "username"=>"bob90", "user"=>{"email"=>"bob@yahoo.com", "username"=>"bob90"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mMarket Load (13.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 23ms (Views: 9.4ms | ActiveRecord: 13.4ms | Allocations: 4026)
+
+
+  [1m[36mUser Create (17.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "bob@yahoo.com"], ["username", "bob90"], ["created_at", "2020-08-14 11:23:20.404290"], ["updated_at", "2020-08-14 11:23:20.404290"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (17.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 43ms (Views: 1.5ms | ActiveRecord: 35.5ms | Allocations: 5083)
+
+
+Started GET "/users" for ::1 at 2020-08-14 07:23:23 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.8ms | Allocations: 1639)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 07:25:30 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (62.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 69ms (Views: 5.6ms | ActiveRecord: 62.4ms | Allocations: 2431)
+
+
+Started GET "/users" for ::1 at 2020-08-14 11:20:15 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 101ms (Views: 23.1ms | ActiveRecord: 66.0ms | Allocations: 5681)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 11:21:00 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (19.1ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 144ms (Views: 17.2ms | ActiveRecord: 124.2ms | Allocations: 8033)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 11:31:55 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (56.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 102ms (Views: 46.2ms | ActiveRecord: 56.0ms | Allocations: 2544)
+
+
+Started POST "/users" for ::1 at 2020-08-14 11:32:37 -0400
+Started GET "/markets" for ::1 at 2020-08-14 11:32:37 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"email"=>"madeline@gmail.com", "username"=>"madeline5", "user"=>{"email"=>"madeline@gmail.com", "username"=>"madeline5"}}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (31.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "madeline@gmail.com"], ["username", "madeline5"], ["created_at", "2020-08-14 15:32:37.780236"], ["updated_at", "2020-08-14 15:32:37.780236"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+Completed 201 Created in 57ms (Views: 1.9ms | ActiveRecord: 46.5ms | Allocations: 2795)
+
+
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (13.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 6.8ms | ActiveRecord: 13.4ms | Allocations: 2541)
+
+
+Started GET "/users" for ::1 at 2020-08-14 11:32:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.1ms | Allocations: 1755)
+
+
+Started GET "/markets" for ::1 at 2020-08-14 11:33:04 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.0ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 3.0ms | Allocations: 2431)
+
+
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+Started GET "/users" for ::1 at 2020-08-14 12:12:44 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (24.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 56ms (Views: 14.6ms | ActiveRecord: 38.7ms | Allocations: 5797)
+
+
+Started GET "/users/wt08" for ::1 at 2020-08-14 12:12:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"wt08"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 25ms (ActiveRecord: 19.5ms | Allocations: 1107)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=wt08):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/wt08" for ::1 at 2020-08-14 12:13:59 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"wt08"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 77ms (ActiveRecord: 68.9ms | Allocations: 1943)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=wt08):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users" for ::1 at 2020-08-14 12:14:12 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.6ms | Allocations: 4992)
+
+
+Started GET "/users/wt08" for ::1 at 2020-08-14 12:14:18 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"wt08"}
+  [1m[36mUser Load (29.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `set_user'
+Completed 404 Not Found in 33ms (ActiveRecord: 29.5ms | Allocations: 665)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=wt08):
+  
+app/controllers/users_controller.rb:49:in `set_user'
+Started GET "/users/username/wt08" for ::1 at 2020-08-14 12:14:26 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `display'
+Completed 204 No Content in 5ms (ActiveRecord: 0.7ms | Allocations: 749)
+
+
+Started GET "/users" for ::1 at 2020-08-14 12:15:40 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.5ms | Allocations: 1755)
+
+
+Started GET "/users/username/wt08" for ::1 at 2020-08-14 12:16:45 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+Completed 404 Not Found in 41ms (ActiveRecord: 39.0ms | Allocations: 890)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:50:in `set_user'
+Started GET "/users/username/wt08" for ::1 at 2020-08-14 12:16:59 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.0ms | Allocations: 35675)
+
+
+  
+NoMethodError (undefined method `set_user' for #<UsersController:0x00007fc504e3f460>
+Did you mean?  set_request!):
+  
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/username/wt08" for ::1 at 2020-08-14 12:17:19 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `display'
+Completed 200 OK in 118ms (Views: 0.8ms | ActiveRecord: 98.8ms | Allocations: 4474)
+
+
+Started GET "/users/username/wt08" for ::1 at 2020-08-14 12:17:35 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `display'
+Completed 200 OK in 98ms (Views: 0.5ms | ActiveRecord: 83.0ms | Allocations: 4446)
+
+
+Started GET "/users" for ::1 at 2020-08-14 12:17:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 3.3ms | Allocations: 1760)
+
+
+Started GET "/users/username/bob90" for ::1 at 2020-08-14 12:17:50 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"bob90"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bob90"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `display'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 744)
+
+
