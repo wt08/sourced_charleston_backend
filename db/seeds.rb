@@ -21,3 +21,7 @@ Market.create([
     { name: "Moncks Corner Farmers Market", address: '418 East Main St., Moncks Corner 29461', exits: 4214, lat: 33.194818, long: -80.002113 },
 
   ])
+
+  User.create([
+    { email: "will@gmail.com", username: "wt08" }
+  ])

@@ -3467,3 +3467,167 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 115)
 
 
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (12.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (4.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2020-08-15 11:05:11 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 6.0ms | Allocations: 1814)
+
+
+  [1m[36mMarket Load (0.9ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 5]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (6.7ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.5ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.3ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (3.2ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 13]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (2.1ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 14]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.0ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 15]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/markets" for ::1 at 2020-08-15 11:05:41 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (3.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 4.3ms | ActiveRecord: 10.8ms | Allocations: 1532)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (3.2ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sea Island Farmers Market"], ["address", "2024 Academy Road, Johns Island, SC 29455"], ["exits", 4214], ["lat", 32.715936], ["long", -80.050307], ["created_at", "2020-08-15 15:05:50.941588"], ["updated_at", "2020-08-15 15:05:50.941588"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Island Farmers Market"], ["address", " 1977 Maybank Highway, Charleston, SC 29412"], ["exits", 4214], ["lat", 32.762181], ["long", -79.987], ["created_at", "2020-08-15 15:05:50.949523"], ["updated_at", "2020-08-15 15:05:50.949523"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "West Ashley Farmers Market"], ["address", "Ackerman Park, 55 Sycamore Ave., Charleston 29407"], ["exits", 4214], ["lat", 32.79028], ["long", -79.988532], ["created_at", "2020-08-15 15:05:50.956551"], ["updated_at", "2020-08-15 15:05:50.956551"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (1.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Downtown Charleston Farmers Market"], ["address", "Marion Square – 329 Meeting Street, Charleston 29403"], ["exits", 4214], ["lat", 32.786935], ["long", -79.93573], ["created_at", "2020-08-15 15:05:50.961217"], ["updated_at", "2020-08-15 15:05:50.961217"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "North Charleston Farmers Market"], ["address", "Felix C Davis Community Center, 4800 Park Circle, North Charleston 29405"], ["exits", 4214], ["lat", 32.881632], ["long", -79.984722], ["created_at", "2020-08-15 15:05:50.966468"], ["updated_at", "2020-08-15 15:05:50.966468"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Summerville Farmers Market"], ["address", "200 S. Main St., Summerville 29483"], ["exits", 4214], ["lat", 33.018975], ["long", -80.176445], ["created_at", "2020-08-15 15:05:50.970826"], ["updated_at", "2020-08-15 15:05:50.970826"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mt. Pleasant Farmers Market"], ["address", "Mt. Pleasant Farmers Market Pavilion (Moultrie Middle School) 645 Coleman Blvd, Mt Pleasant 29464"], ["exits", 4214], ["lat", 32.790978], ["long", -79.872204], ["created_at", "2020-08-15 15:05:50.975349"], ["updated_at", "2020-08-15 15:05:50.975349"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sullivan's Island Farmers Market"], ["address", "J. Marshall Stith Park (2050 Middle Street), Sullivan’s Island, 29482"], ["exits", 4214], ["lat", 32.762023], ["long", -79.838904], ["created_at", "2020-08-15 15:05:50.979412"], ["updated_at", "2020-08-15 15:05:50.979412"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.6ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Folly Beach Farmers Market"], ["address", "Folly River Park, Center Street, Folly Beach 29439"], ["exits", 4214], ["lat", 32.658537], ["long", -79.941945], ["created_at", "2020-08-15 15:05:50.984768"], ["updated_at", "2020-08-15 15:05:50.984768"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Isle of Palms Farmers Market"], ["address", "114th Avenue, Isle of Palms 29451"], ["exits", 4214], ["lat", 32.787069], ["long", -79.786046], ["created_at", "2020-08-15 15:05:50.990010"], ["updated_at", "2020-08-15 15:05:50.990010"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Moncks Corner Farmers Market"], ["address", "418 East Main St., Moncks Corner 29461"], ["exits", 4214], ["lat", 33.194818], ["long", -80.002113], ["created_at", "2020-08-15 15:05:50.994425"], ["updated_at", "2020-08-15 15:05:50.994425"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "will@gmail.com"], ["username", "wt08"], ["created_at", "2020-08-15 15:05:51.019654"], ["updated_at", "2020-08-15 15:05:51.019654"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/markets" for ::1 at 2020-08-15 11:05:54 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.3ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 16.8ms | ActiveRecord: 9.6ms | Allocations: 7596)
+
+
+Started GET "/users" for ::1 at 2020-08-15 11:05:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 7.4ms | Allocations: 3911)
+
+
