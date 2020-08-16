@@ -3717,3 +3717,52 @@ Processing by ProducesController#index as HTML
 Completed 200 OK in 74ms (Views: 32.7ms | ActiveRecord: 38.8ms | Allocations: 5648)
 
 
+Started GET "/produces" for ::1 at 2020-08-16 13:37:00 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (11.1ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 2.7ms | ActiveRecord: 11.1ms | Allocations: 1019)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:37:22 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (17.9ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 1.9ms | ActiveRecord: 17.9ms | Allocations: 961)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:37:47 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (0.6ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 980)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:38:29 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (0.3ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 980)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:39:40 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (0.4ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 980)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:39:57 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (3.1ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 3.1ms | Allocations: 961)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:59:42 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (0.9ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 1020)
+
+

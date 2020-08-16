@@ -27,5 +27,34 @@ Market.create([
   ])
 
   Produce.create([
-    { name: "Apples", season: "Fall,Winter", img: "https://www.edamam.com/food-img/42c/42c006401027d35add93113548eeaae6.jpg" }
+    { name: "Apple", season: "Fall,Winter", img: "https://www.edamam.com/food-img/42c/42c006401027d35add93113548eeaae6.jpg" },
+    { name: "Asparagus", season: "Spring", img: "https://www.edamam.com/food-img/159/159dec8bbcabf7ed641a57b40a2d2eb9.jpg" },
+    { name: "Green Bean", season: "Summer, Fall", img: "https://www.edamam.com/food-img/891/89135f10639878a2360e6a33c9af3d91.jpg" },
+    { name: "Beet", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/ec3/ec3d96cdf3b58183c1aad01875b93805.jpg" },
+    { name: "Blackberry", season: "Summer", img: "https://www.edamam.com/food-img/b49/b49683595ad4c4565d1bfe05348ef6eb.jpg" },
+    { name: "Broccoli", season: "Summer", img: "https://www.edamam.com/food-img/3e4/3e47317a3dd54dc911b9c44122285df1.jpg" },
+    { name: "Butter Bean", season: "Summer, Fall", img: "https://www.edamam.com/food-img/15f/15f462406fb7e02e4db2b07a364c9aa7.jpg" },
+    { name: "Cabbage", season: "Spring, Summer", img: "https://www.edamam.com/food-img/cb1/cb1411c925c19de26620e63cb90d0e14.jpg" },
+    { name: "Cantaloupe", season: "Summer", img: "https://www.edamam.com/food-img/b1b/b1b603c35a63d662e3359d4e55b31653.jpg" },
+    { name: "Cilantro", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg" },
+    { name: "Cucumber", season: "Summer, Fall", img: "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg" },
+    { name: "Green Onion", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg" },
+    { name: "Leek", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/4ae/4ae9e09d029a28e0e2c64bdfdbf3f6ae.jpg" },
+    { name: "Collard", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/d4f/d4ff5cab2328d9674cc46fc50cdfb17c.jpg" },
+    { name: "Muscadine Grape", season: "Fall", img: "https://www.edamam.com/food-img/68e/68e0b910dbaa741450ddb1059eb650b9.jpg" },
+    { name: "Okra", season: "Summer, Fall", img: "https://www.edamam.com/food-img/718/718616e8ece2ef3f1ae0187c0ff04cda.jpg" },
+    { name: "Parsley", season: "Spring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg" },
+    { name: "Peach", season: "Summer", img: "https://www.edamam.com/food-img/437/4378245cfab2121c9e6eb9e3c3dc9ac8.jpg" },
+    { name: "Peanut", season: "Summer", img: "https://www.edamam.com/food-img/6f4/6f41e31c53bb58cc1b7331d0764963f7.jpg" },
+    { name: "Pea", season: "Summer, Fall, Winter", img: "https://www.edamam.com/food-img/5ed/5ed641d646c028598a90bdb9ece34fc8.jpg" },
+    { name: "Pecan", season: "Fall, Winter", img: "https://www.edamam.com/food-img/42f/42ff4c36d4d0b4e8069604c97af1cfef.jpg" },
+    { name: "Bell Pepper", season: "Summer, Fall", img: "https://www.edamam.com/food-img/629/629dc9fddc1f8aec27fa337dd6ce2b7c.jpg" },
+    { name: "Radish", season: "Sring, Summer, Fall, Winter", img: "https://www.edamam.com/food-img/ad7/ad78f4315cdba1dc26ccef0d7dba464b.jpg" },
+    { name: "Yellow Squash", season: "Summer, Fall", img: "https://www.edamam.com/food-img/f90/f903abb8694c9e918040fbd7fb776c4f.jpg" },
+    { name: "Strawberry", season: "Spring, Summer", img: "https://www.edamam.com/food-img/00c/00c8851e401bf7975be7f73499b4b573.jpg" },
+    { name: "Corn", season: "Summer", img: "https://www.edamam.com/food-img/eb5/eb5e11afb9f697720b2de2e0e0e27d8d.jpg" },
+    { name: "Sweet Potato", season: "Fall, Winter", img: "https://www.edamam.com/food-img/b66/b660e3d37b4ea9d58cb98e8ea73933b6.jpg" },
+    { name: "Tomato", season: "Summer, Fall", img: "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg" },
+    { name: "Watermelon", season: "Summer, Fall", img: "https://www.edamam.com/food-img/e83/e83c09ce97ecd44e00b8c561ab682202.jpg" },
+    { name: "Zucchini", season: "Summer, Fall", img: "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg" }
   ])
