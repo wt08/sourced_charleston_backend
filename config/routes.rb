@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :produces
   root 'welcome#index'
   resources :users
   get 'users(/username/:username)', to: 'users#display'

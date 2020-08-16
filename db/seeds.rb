@@ -25,3 +25,7 @@ Market.create([
   User.create([
     { email: "will@gmail.com", username: "wt08" }
   ])
+
+  Produce.create([
+    { name: "Apples", season: "Fall,Winter", img: "https://www.edamam.com/food-img/42c/42c006401027d35add93113548eeaae6.jpg" }
+  ])

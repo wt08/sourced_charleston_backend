@@ -3631,3 +3631,89 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 21ms (Views: 13.5ms | ActiveRecord: 7.4ms | Allocations: 3911)
 
 
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200813214550)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (45.0ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mprimary::SchemaMigration Destroy (12.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20200813214550"]]
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200813214550)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (39.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "username" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200813214550"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2270087361430130655)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProduces (20200816171200)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "produces" ("id" bigserial primary key, "name" character varying, "season" character varying, "img" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200816171200"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2270087361430130655)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (4.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sea Island Farmers Market"], ["address", "2024 Academy Road, Johns Island, SC 29455"], ["exits", 4214], ["lat", 32.715936], ["long", -80.050307], ["created_at", "2020-08-16 17:25:52.339640"], ["updated_at", "2020-08-16 17:25:52.339640"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Island Farmers Market"], ["address", " 1977 Maybank Highway, Charleston, SC 29412"], ["exits", 4214], ["lat", 32.762181], ["long", -79.987], ["created_at", "2020-08-16 17:25:52.348268"], ["updated_at", "2020-08-16 17:25:52.348268"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "West Ashley Farmers Market"], ["address", "Ackerman Park, 55 Sycamore Ave., Charleston 29407"], ["exits", 4214], ["lat", 32.79028], ["long", -79.988532], ["created_at", "2020-08-16 17:25:52.352169"], ["updated_at", "2020-08-16 17:25:52.352169"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Downtown Charleston Farmers Market"], ["address", "Marion Square – 329 Meeting Street, Charleston 29403"], ["exits", 4214], ["lat", 32.786935], ["long", -79.93573], ["created_at", "2020-08-16 17:25:52.355843"], ["updated_at", "2020-08-16 17:25:52.355843"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "North Charleston Farmers Market"], ["address", "Felix C Davis Community Center, 4800 Park Circle, North Charleston 29405"], ["exits", 4214], ["lat", 32.881632], ["long", -79.984722], ["created_at", "2020-08-16 17:25:52.359373"], ["updated_at", "2020-08-16 17:25:52.359373"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Summerville Farmers Market"], ["address", "200 S. Main St., Summerville 29483"], ["exits", 4214], ["lat", 33.018975], ["long", -80.176445], ["created_at", "2020-08-16 17:25:52.362709"], ["updated_at", "2020-08-16 17:25:52.362709"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mt. Pleasant Farmers Market"], ["address", "Mt. Pleasant Farmers Market Pavilion (Moultrie Middle School) 645 Coleman Blvd, Mt Pleasant 29464"], ["exits", 4214], ["lat", 32.790978], ["long", -79.872204], ["created_at", "2020-08-16 17:25:52.366248"], ["updated_at", "2020-08-16 17:25:52.366248"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sullivan's Island Farmers Market"], ["address", "J. Marshall Stith Park (2050 Middle Street), Sullivan’s Island, 29482"], ["exits", 4214], ["lat", 32.762023], ["long", -79.838904], ["created_at", "2020-08-16 17:25:52.370055"], ["updated_at", "2020-08-16 17:25:52.370055"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Folly Beach Farmers Market"], ["address", "Folly River Park, Center Street, Folly Beach 29439"], ["exits", 4214], ["lat", 32.658537], ["long", -79.941945], ["created_at", "2020-08-16 17:25:52.373577"], ["updated_at", "2020-08-16 17:25:52.373577"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Isle of Palms Farmers Market"], ["address", "114th Avenue, Isle of Palms 29451"], ["exits", 4214], ["lat", 32.787069], ["long", -79.786046], ["created_at", "2020-08-16 17:25:52.377030"], ["updated_at", "2020-08-16 17:25:52.377030"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.3ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Moncks Corner Farmers Market"], ["address", "418 East Main St., Moncks Corner 29461"], ["exits", 4214], ["lat", 33.194818], ["long", -80.002113], ["created_at", "2020-08-16 17:25:52.380790"], ["updated_at", "2020-08-16 17:25:52.380790"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "will@gmail.com"], ["username", "wt08"], ["created_at", "2020-08-16 17:25:52.398453"], ["updated_at", "2020-08-16 17:25:52.398453"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.8ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Apples"], ["season", "Fall,Winter"], ["img", "https://www.edamam.com/food-img/42c/42c006401027d35add93113548eeaae6.jpg"], ["created_at", "2020-08-16 17:25:52.412119"], ["updated_at", "2020-08-16 17:25:52.412119"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-08-16 13:26:04 -0400
+  [1m[35m (9.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 176)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 13:26:28 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (3.2ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 74ms (Views: 32.7ms | ActiveRecord: 38.8ms | Allocations: 5648)
+
+
