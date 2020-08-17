@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favorites
   resources :produces
   root 'welcome#index'
   resources :users
