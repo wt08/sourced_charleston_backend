@@ -3766,3 +3766,276 @@ Processing by ProducesController#index as HTML
 Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 1020)
 
 
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (4.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMarket Load (6.5ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.8ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.7ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 18]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.5ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 19]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.0ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 21]]
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 22]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.7ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.5ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 25]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (9.8ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 26]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (17.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (5.2ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.3ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 28]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.1ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 31]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.4ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 32]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (4.5ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (1.1ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 34]]
+  [1m[35m (29.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.6ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (6.0ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 36]]
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Destroy (0.8ms)[0m  [1m[31mDELETE FROM "markets" WHERE "markets"."id" = $1[0m  [["id", 37]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProduce Load (0.9ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Destroy (0.4ms)[0m  [1m[31mDELETE FROM "produces" WHERE "produces"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/produces" for ::1 at 2020-08-16 14:14:31 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (0.9ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.9ms | Allocations: 887)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-08-16 14:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/markets" for ::1 at 2020-08-16 14:14:33 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (1.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 2.9ms | ActiveRecord: 10.5ms | Allocations: 1658)
+
+
+Started GET "/users" for ::1 at 2020-08-16 14:14:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 5.1ms | Allocations: 1498)
+
+
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (2.0ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sea Island Farmers Market"], ["address", "2024 Academy Road, Johns Island, SC 29455"], ["exits", 4214], ["lat", 32.715936], ["long", -80.050307], ["created_at", "2020-08-16 18:14:42.550139"], ["updated_at", "2020-08-16 18:14:42.550139"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "James Island Farmers Market"], ["address", " 1977 Maybank Highway, Charleston, SC 29412"], ["exits", 4214], ["lat", 32.762181], ["long", -79.987], ["created_at", "2020-08-16 18:14:42.556911"], ["updated_at", "2020-08-16 18:14:42.556911"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (10.8ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "West Ashley Farmers Market"], ["address", "Ackerman Park, 55 Sycamore Ave., Charleston 29407"], ["exits", 4214], ["lat", 32.79028], ["long", -79.988532], ["created_at", "2020-08-16 18:14:42.561178"], ["updated_at", "2020-08-16 18:14:42.561178"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.5ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Downtown Charleston Farmers Market"], ["address", "Marion Square – 329 Meeting Street, Charleston 29403"], ["exits", 4214], ["lat", 32.786935], ["long", -79.93573], ["created_at", "2020-08-16 18:14:42.577218"], ["updated_at", "2020-08-16 18:14:42.577218"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "North Charleston Farmers Market"], ["address", "Felix C Davis Community Center, 4800 Park Circle, North Charleston 29405"], ["exits", 4214], ["lat", 32.881632], ["long", -79.984722], ["created_at", "2020-08-16 18:14:42.582081"], ["updated_at", "2020-08-16 18:14:42.582081"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Summerville Farmers Market"], ["address", "200 S. Main St., Summerville 29483"], ["exits", 4214], ["lat", 33.018975], ["long", -80.176445], ["created_at", "2020-08-16 18:14:42.586634"], ["updated_at", "2020-08-16 18:14:42.586634"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Mt. Pleasant Farmers Market"], ["address", "Mt. Pleasant Farmers Market Pavilion (Moultrie Middle School) 645 Coleman Blvd, Mt Pleasant 29464"], ["exits", 4214], ["lat", 32.790978], ["long", -79.872204], ["created_at", "2020-08-16 18:14:42.591268"], ["updated_at", "2020-08-16 18:14:42.591268"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Sullivan's Island Farmers Market"], ["address", "J. Marshall Stith Park (2050 Middle Street), Sullivan’s Island, 29482"], ["exits", 4214], ["lat", 32.762023], ["long", -79.838904], ["created_at", "2020-08-16 18:14:42.595916"], ["updated_at", "2020-08-16 18:14:42.595916"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Folly Beach Farmers Market"], ["address", "Folly River Park, Center Street, Folly Beach 29439"], ["exits", 4214], ["lat", 32.658537], ["long", -79.941945], ["created_at", "2020-08-16 18:14:42.600584"], ["updated_at", "2020-08-16 18:14:42.600584"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Isle of Palms Farmers Market"], ["address", "114th Avenue, Isle of Palms 29451"], ["exits", 4214], ["lat", 32.787069], ["long", -79.786046], ["created_at", "2020-08-16 18:14:42.604905"], ["updated_at", "2020-08-16 18:14:42.604905"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMarket Create (0.4ms)[0m  [1m[32mINSERT INTO "markets" ("name", "address", "exits", "lat", "long", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Moncks Corner Farmers Market"], ["address", "418 East Main St., Moncks Corner 29461"], ["exits", 4214], ["lat", 33.194818], ["long", -80.002113], ["created_at", "2020-08-16 18:14:42.609086"], ["updated_at", "2020-08-16 18:14:42.609086"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "will@gmail.com"], ["username", "wt08"], ["created_at", "2020-08-16 18:14:42.637609"], ["updated_at", "2020-08-16 18:14:42.637609"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (1.1ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Apple"], ["season", "Fall,Winter"], ["img", "https://www.edamam.com/food-img/42c/42c006401027d35add93113548eeaae6.jpg"], ["created_at", "2020-08-16 18:14:42.652360"], ["updated_at", "2020-08-16 18:14:42.652360"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Asparagus"], ["season", "Spring"], ["img", "https://www.edamam.com/food-img/159/159dec8bbcabf7ed641a57b40a2d2eb9.jpg"], ["created_at", "2020-08-16 18:14:42.657530"], ["updated_at", "2020-08-16 18:14:42.657530"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (10.0ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Green Bean"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/891/89135f10639878a2360e6a33c9af3d91.jpg"], ["created_at", "2020-08-16 18:14:42.661416"], ["updated_at", "2020-08-16 18:14:42.661416"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Beet"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/ec3/ec3d96cdf3b58183c1aad01875b93805.jpg"], ["created_at", "2020-08-16 18:14:42.675988"], ["updated_at", "2020-08-16 18:14:42.675988"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Blackberry"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/b49/b49683595ad4c4565d1bfe05348ef6eb.jpg"], ["created_at", "2020-08-16 18:14:42.680385"], ["updated_at", "2020-08-16 18:14:42.680385"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Broccoli"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/3e4/3e47317a3dd54dc911b9c44122285df1.jpg"], ["created_at", "2020-08-16 18:14:42.684738"], ["updated_at", "2020-08-16 18:14:42.684738"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Butter Bean"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/15f/15f462406fb7e02e4db2b07a364c9aa7.jpg"], ["created_at", "2020-08-16 18:14:42.689184"], ["updated_at", "2020-08-16 18:14:42.689184"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.3ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cabbage"], ["season", "Spring, Summer"], ["img", "https://www.edamam.com/food-img/cb1/cb1411c925c19de26620e63cb90d0e14.jpg"], ["created_at", "2020-08-16 18:14:42.693334"], ["updated_at", "2020-08-16 18:14:42.693334"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cantaloupe"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/b1b/b1b603c35a63d662e3359d4e55b31653.jpg"], ["created_at", "2020-08-16 18:14:42.697512"], ["updated_at", "2020-08-16 18:14:42.697512"]]
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.5ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cilantro"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"], ["created_at", "2020-08-16 18:14:42.724196"], ["updated_at", "2020-08-16 18:14:42.724196"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Cucumber"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"], ["created_at", "2020-08-16 18:14:42.729370"], ["updated_at", "2020-08-16 18:14:42.729370"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Green Onion"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"], ["created_at", "2020-08-16 18:14:42.733741"], ["updated_at", "2020-08-16 18:14:42.733741"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leek"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/4ae/4ae9e09d029a28e0e2c64bdfdbf3f6ae.jpg"], ["created_at", "2020-08-16 18:14:42.738302"], ["updated_at", "2020-08-16 18:14:42.738302"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.3ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Collard"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/d4f/d4ff5cab2328d9674cc46fc50cdfb17c.jpg"], ["created_at", "2020-08-16 18:14:42.742556"], ["updated_at", "2020-08-16 18:14:42.742556"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Muscadine Grape"], ["season", "Fall"], ["img", "https://www.edamam.com/food-img/68e/68e0b910dbaa741450ddb1059eb650b9.jpg"], ["created_at", "2020-08-16 18:14:42.746632"], ["updated_at", "2020-08-16 18:14:42.746632"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Okra"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/718/718616e8ece2ef3f1ae0187c0ff04cda.jpg"], ["created_at", "2020-08-16 18:14:42.750734"], ["updated_at", "2020-08-16 18:14:42.750734"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Parsley"], ["season", "Spring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"], ["created_at", "2020-08-16 18:14:42.754740"], ["updated_at", "2020-08-16 18:14:42.754740"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.5ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Peach"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/437/4378245cfab2121c9e6eb9e3c3dc9ac8.jpg"], ["created_at", "2020-08-16 18:14:42.758690"], ["updated_at", "2020-08-16 18:14:42.758690"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (9.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.6ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Peanut"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/6f4/6f41e31c53bb58cc1b7331d0764963f7.jpg"], ["created_at", "2020-08-16 18:14:42.762895"], ["updated_at", "2020-08-16 18:14:42.762895"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.7ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pea"], ["season", "Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/5ed/5ed641d646c028598a90bdb9ece34fc8.jpg"], ["created_at", "2020-08-16 18:14:42.778152"], ["updated_at", "2020-08-16 18:14:42.778152"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pecan"], ["season", "Fall, Winter"], ["img", "https://www.edamam.com/food-img/42f/42ff4c36d4d0b4e8069604c97af1cfef.jpg"], ["created_at", "2020-08-16 18:14:42.783177"], ["updated_at", "2020-08-16 18:14:42.783177"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.3ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bell Pepper"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/629/629dc9fddc1f8aec27fa337dd6ce2b7c.jpg"], ["created_at", "2020-08-16 18:14:42.787356"], ["updated_at", "2020-08-16 18:14:42.787356"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Radish"], ["season", "Sring, Summer, Fall, Winter"], ["img", "https://www.edamam.com/food-img/ad7/ad78f4315cdba1dc26ccef0d7dba464b.jpg"], ["created_at", "2020-08-16 18:14:42.791839"], ["updated_at", "2020-08-16 18:14:42.791839"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.3ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Yellow Squash"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/f90/f903abb8694c9e918040fbd7fb776c4f.jpg"], ["created_at", "2020-08-16 18:14:42.796220"], ["updated_at", "2020-08-16 18:14:42.796220"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Strawberry"], ["season", "Spring, Summer"], ["img", "https://www.edamam.com/food-img/00c/00c8851e401bf7975be7f73499b4b573.jpg"], ["created_at", "2020-08-16 18:14:42.800044"], ["updated_at", "2020-08-16 18:14:42.800044"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Corn"], ["season", "Summer"], ["img", "https://www.edamam.com/food-img/eb5/eb5e11afb9f697720b2de2e0e0e27d8d.jpg"], ["created_at", "2020-08-16 18:14:42.804908"], ["updated_at", "2020-08-16 18:14:42.804908"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sweet Potato"], ["season", "Fall, Winter"], ["img", "https://www.edamam.com/food-img/b66/b660e3d37b4ea9d58cb98e8ea73933b6.jpg"], ["created_at", "2020-08-16 18:14:42.809074"], ["updated_at", "2020-08-16 18:14:42.809074"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (9.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.6ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tomato"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"], ["created_at", "2020-08-16 18:14:42.813119"], ["updated_at", "2020-08-16 18:14:42.813119"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.4ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Watermelon"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/e83/e83c09ce97ecd44e00b8c561ab682202.jpg"], ["created_at", "2020-08-16 18:14:42.828081"], ["updated_at", "2020-08-16 18:14:42.828081"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduce Create (0.3ms)[0m  [1m[32mINSERT INTO "produces" ("name", "season", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Zucchini"], ["season", "Summer, Fall"], ["img", "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg"], ["created_at", "2020-08-16 18:14:42.832334"], ["updated_at", "2020-08-16 18:14:42.832334"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2020-08-16 14:14:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 21.9ms | ActiveRecord: 17.9ms | Allocations: 4006)
+
+
+Started GET "/markets" for ::1 at 2020-08-16 14:14:50 -0400
+Processing by MarketsController#index as HTML
+  [1m[36mMarket Load (2.4ms)[0m  [1m[34mSELECT "markets".* FROM "markets"[0m
+  ↳ app/controllers/markets_controller.rb:7:in `index'
+Completed 200 OK in 27ms (Views: 18.2ms | ActiveRecord: 8.0ms | Allocations: 7298)
+
+
+Started GET "/produces" for ::1 at 2020-08-16 14:14:54 -0400
+Processing by ProducesController#index as HTML
+  [1m[36mProduce Load (1.9ms)[0m  [1m[34mSELECT "produces".* FROM "produces"[0m
+  ↳ app/controllers/produces_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.9ms | Allocations: 4834)
+
+

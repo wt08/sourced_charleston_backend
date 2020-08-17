@@ -7,6 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+
+
+
 Market.create([
     { name: 'Sea Island Farmers Market', address: '2024 Academy Road, Johns Island, SC 29455', exits: 4214, lat: 32.715936, long: -80.050307 },
     { name: 'James Island Farmers Market', address: ' 1977 Maybank Highway, Charleston, SC 29412', exits: 4214, lat: 32.762181, long: -79.987000 },
@@ -58,3 +61,5 @@ Market.create([
     { name: "Watermelon", season: "Summer, Fall", img: "https://www.edamam.com/food-img/e83/e83c09ce97ecd44e00b8c561ab682202.jpg" },
     { name: "Zucchini", season: "Summer, Fall", img: "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg" }
   ])
+
+
