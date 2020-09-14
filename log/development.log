@@ -4597,3 +4597,102 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 94ms (Views: 0.1ms | ActiveRecord: 66.4ms | Allocations: 9925)
 
 
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-09-14 14:18:47 -0400
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 176)
+
+
+Started GET "/users" for ::1 at 2020-09-14 14:18:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (26.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  [1m[36mFavorite Load (1.7ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  [1m[36mFavorite Load (24.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 192ms (Views: 0.2ms | ActiveRecord: 133.1ms | Allocations: 14130)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/users/3/favorites" for ::1 at 2020-09-14 14:41:17 -0400
+Processing by FavoritesController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mFavorite Load (15.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/favorites_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 7.1ms | ActiveRecord: 15.4ms | Allocations: 1167)
+
+
+Started GET "/users" for ::1 at 2020-09-14 14:42:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  [1m[36mFavorite Load (0.6ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 2.7ms | Allocations: 2898)
+
+
+Started GET "/users/wt08" for ::1 at 2020-09-14 14:42:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"wt08"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `set_user'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 790)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=wt08):
+  
+app/controllers/users_controller.rb:50:in `set_user'
+Started GET "/users/3/favorites" for ::1 at 2020-09-14 14:42:38 -0400
+Processing by FavoritesController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mFavorite Load (0.4ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites"[0m
+  ↳ app/controllers/favorites_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1080)
+
+
+Started GET "/users/3" for ::1 at 2020-09-14 14:42:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `set_user'
+  [1m[36mFavorite Load (26.1ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:13:in `show'
+Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 28.5ms | Allocations: 1694)
+
+
+Started GET "/users/2" for ::1 at 2020-09-14 14:42:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `set_user'
+  [1m[36mFavorite Load (0.5ms)[0m  [1m[34mSELECT "favorites".* FROM "favorites" WHERE "favorites"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:13:in `show'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1676)
+
+
+Started GET "/users/wt08" for ::1 at 2020-09-14 14:43:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"wt08"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:50:in `set_user'
+Completed 404 Not Found in 53ms (ActiveRecord: 36.7ms | Allocations: 2229)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=wt08):
+  
+app/controllers/users_controller.rb:50:in `set_user'
+Started GET "/users/username/wt08" for ::1 at 2020-09-14 14:45:47 -0400
+Processing by UsersController#display as HTML
+  Parameters: {"username"=>"wt08"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "wt08"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `display'
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 1.8ms | Allocations: 3805)
+
+

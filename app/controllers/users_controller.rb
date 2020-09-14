@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     render json: @user.to_json(include: :favorites)
   end
 
-  # GET /users/wt08
+  # GET /users/username/wt08
   def display
     specific_user = User.find_by(username: params[:username])
     render json: specific_user
